@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-void app_main(void)
-{
+void start_wifi(void) {
+    
+}
+
+void app_main(void) {
 
 }
