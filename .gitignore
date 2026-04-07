@@ -49,5 +49,5 @@ fp-info-cache
 
 **/*-backups/*.zip
 
-
+CarbonAwareCircuit-backups/
 *.kicad_prl
