@@ -19,7 +19,6 @@
 static const char *TAG = "wifi_app";
 
 static void ERROR(void) {
-    ESP_LOGE(TAG, "Critical Error: Halting system.");
     gpio_reset_pin(ERR_GPIO);
     gpio_set_direction(ERR_GPIO, GPIO_MODE_OUTPUT);
 
