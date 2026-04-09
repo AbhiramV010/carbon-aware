@@ -2144,6 +2144,22 @@
 		(color 0 0 0 0)
 		(uuid "e38c266e-9196-4a9d-8fd1-04812ef24260")
 	)
+	(no_connect
+		(at 93.98 52.07)
+		(uuid "13fab07f-7852-41b4-bb46-986c6962020f")
+	)
+	(no_connect
+		(at 91.44 52.07)
+		(uuid "278d9ae2-3230-4f89-a25f-f6f40478e654")
+	)
+	(no_connect
+		(at 86.36 52.07)
+		(uuid "643a8076-f7ba-45d5-8b78-e4acdfb662ff")
+	)
+	(no_connect
+		(at 88.9 52.07)
+		(uuid "e8344788-5928-44b8-bebe-1b30d76f05ec")
+	)
 	(wire
 		(pts
 			(xy 45.72 38.1) (xy 109.22 38.1)
@@ -3405,10 +3421,10 @@
 			(uuid "c3786491-eed9-4b59-930d-c7ebdb174084")
 		)
 		(pin "4"
-			(uuid "beb64c4a-1280-4fd1-8301-6595b2b8caa4")
+			(uuid "beb64c4a-1280-4fd1-8301-6595b2b8caa5")
 		)
 		(pin "3"
-			(uuid "6056d429-ee09-4ef6-99c4-e5c540cc2c96")
+			(uuid "6056d429-ee09-4ef6-99c4-e5c540cc2c97")
 		)
 		(instances
 			(project "CarbonAwareCircuit"
