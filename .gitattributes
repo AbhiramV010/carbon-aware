@@ -1,3 +1,4 @@
 *.kicad_pcb linguist-detectable=true
 *.kicad_sch linguist-detectable=true
 *.kicad_pro linguist-detectable=true
+* linguist-generated=true   
