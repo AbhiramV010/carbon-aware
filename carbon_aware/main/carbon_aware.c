@@ -12,6 +12,8 @@
 #include "driver/gpio.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "esp_http_client.h"
+
 
 #define WIFI_SSID "YOUR_SSID" 
 #define WIFI_PASS "YOUR_PASS" 
@@ -71,5 +73,21 @@ void app_main(void) {
     if (esp_wifi_start() != ESP_OK) ERROR();
 }
 
-static void SDK_query(void) {
+static bool SDK_query(void) {
+    esp_http_client_config_t config = {
+        .url = "http://api.carbonaware.org/emissions/bylocation?location=eastus", 
+        .method = HTTP_METHOD_GET,
+    };
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+    
+    bool is_clean = false;
+    if (esp_http_client_perform(client) == ESP_OK) {
+        int status = esp_http_client_get_status_code(client);
+        if (status == 200) {   
+            is_clean = true;
+        }  
+    }
+
+    esp_http_client_cleanup(client);
+    return is_clean;
 }
